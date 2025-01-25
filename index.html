@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeteorFire2825</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5097/5097332.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <pre id="readme"></pre>
+    </div>
+
+    <script>
+        fetch('README.md')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('readme').textContent = data;
+            })
+            .catch(error => {
+                console.error('Error loading README.md:', error);
+                document.getElementById('readme').textContent = 'Failed to load README.md';
+            });
+    </script>
+</body>
+</html>
