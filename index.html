@@ -25,27 +25,11 @@
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-        pre {
-            white-space: pre-wrap;
-            word-wrap: break-word;
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <pre id="readme"></pre>
+        <iframe src="README.md" style="width: 100%; height: 90vh; border: none;"></iframe>
     </div>
-
-    <script>
-        fetch('README.md')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('readme').textContent = data;
-            })
-            .catch(error => {
-                console.error('Error loading README.md:', error);
-                document.getElementById('readme').textContent = 'Failed to load README.md';
-            });
-    </script>
 </body>
 </html>
