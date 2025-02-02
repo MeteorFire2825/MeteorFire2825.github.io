@@ -1,44 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Markdown Preview</title>
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5097/5097332.png" type="image/png">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        #content {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeteorFire2825's Official Website</title>
+
+  <!-- Favicon link to the provided PNG image -->
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5097/5097332.png" type="image/png">
+
+  <!-- Adding some basic styling for the page -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #2e3d49;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 40px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    p, ul {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #2e3d49;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+
+    .email-link {
+      color: #00c7ff;
+    }
+  </style>
 </head>
 <body>
-    <div id="content">Loading...</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-        // Fetch and render the Markdown file
-        fetch('README.md')
-            .then(response => response.text())
-            .then(mdContent => {
-                document.getElementById('content').innerHTML = marked(mdContent);
-            })
-            .catch(err => {
-                document.getElementById('content').innerHTML = 'Failed to load README.md';
-                console.error('Error fetching Markdown:', err);
-            });
-    </script>
+  <header>
+    <h1>Welcome to MeteorFire2825's Official Website</h1>
+    <p>Visit my main site: <a href="http://meteorfire2825.github.io" target="_blank">MeteorFire2825.github.io</a></p>
+  </header>
+
+  <section>
+    <p>Hi there! 👋 Welcome to my personal website. Here, I share some of my favorite projects and tools that I've created or contributed to. Whether you're looking for entertainment, tech inspiration, or just exploring, you'll find something interesting below!</p>
+
+    <h2>🚀 <strong>Featured Projects & Links:</strong></h2>
+
+    <ul>
+      <li><h3><a href="https://meteorfire2825.github.io/mp3-player" target="_blank">1. MP3 Player</a></h3>
+          A minimalistic and functional <strong>MP3 player</strong> that lets you play your favorite audio files directly in your browser. It’s perfect for anyone who loves music and wants to run their own files.
+      </li>
+      <li><h3><a href="https://meteorfire2825.github.io/Eaglerforge" target="_blank">2. Eaglerforge</a></h3>
+          Dive into <strong>Eaglerforge</strong>—a browser-based Minecraft experience. Play Minecraft right in your web browser without the need for installation! This project is all about bringing the blocky world of Minecraft into the browser with ease.
+      <li><h3><a href="https://meteorfire2825.github.io/About-ChatGPT" target="_blank">3. About ChatGPT</a></h3>
+          Learn about <strong>ChatGPT</strong>—an advanced AI language model that can generate human-like responses and assist with a variety of tasks. This page provides insights into its workings, uses, and how it’s changing the way we interact with artificial intelligence.
+      </li>
+      <li><h3><a href="https://meteorfire2825.github.io/jslinux-bellard/" target="_blank">4. JS Linux</a></h3>
+          Explore <strong>JS Linux</strong>, an emulator that allows you to experience a fully functional Linux environment directly in your browser. It’s an excellent tool for developers and curious minds!
+      </li>
+      <li><h3><a href="https://meteorfire2825.github.io/boywithuke-songs" target="_blank">5. Boywithuke Songs</a></h3>
+          A collection of <strong>Boywithuke's Songs</strong> curated in an interactive and user-friendly interface. Perfect for fans of his music.
+      </li>
+      <li><h3><a href="https://meteorfire2825.github.io/vlc/" target="_blank">6. VLC Media Player</a></h3>
+          Discover the power of <strong>VLC Media Player</strong>, a versatile media player supporting a wide range of audio and video formats. Dive into this project to explore its features.
+      </li>
+    </ul>
+
+    <h2>🌟 <strong>Explore More & Stay Connected</strong></h2>
+
+    <ul>
+      <li>🚧 <strong>More projects are coming soon!</strong> Stay tuned for updates and new tools I’m building.</li>
+      <li>🛠️ If you’re into tech, coding, or simply curious about how things work, this site will have plenty for you to explore.</li>
+    </ul>
+
+    <h3>📧 <strong>Contact Me:</strong></h3>
+    <p>Got a question, feedback, or just want to chat? Feel free to reach out! You can email me at <a href="mailto:islam2825.202@gmail.com" class="email-link">islam2825.202@gmail.com</a>. I’d love to hear from you!</p>
+
+  </section>
+
+  <footer>
+    <p>Thank you for visiting my site! I hope you find something exciting. 🌍 Stay curious and keep exploring! 🌟</p>
+  </footer>
+
 </body>
 </html>
